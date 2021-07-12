@@ -11,16 +11,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1589cedf-d118-4606-94af-891e4d6bba0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/initialState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/rootReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/__test__/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,22 +50,33 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1vCzuXjph9CKZJpDmULkF8t8Icv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Eimantas\WebstormProjects\warehouse-app\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="ts.external.directory.path" value="C:\Users\Eimantas\WebstormProjects\warehouse-app\node_modules\typescript\lib" />
   </component>
-  <component name="RunManager" selected="npm.lint">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\App\__test__" />
+      <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\App" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.format">
     <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -79,8 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.lint" />
         <item itemvalue="npm.format" />
+        <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
   </component>
@@ -130,29 +150,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="- create react app;" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="460" key="GridCell.Tab.0.bottom" timestamp="1626084032176">
+    <state x="2290" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626090564722">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="460" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626084032176" />
-    <state width="1899" height="460" key="GridCell.Tab.0.center" timestamp="1626084032176">
+    <state x="2290" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626090564722" />
+    <state width="1899" height="360" key="GridCell.Tab.0.bottom" timestamp="1626093843347">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="460" key="GridCell.Tab.0.center/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626084032176" />
-    <state width="1899" height="460" key="GridCell.Tab.0.left" timestamp="1626084032175">
+    <state width="1899" height="360" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626093843347" />
+    <state width="1899" height="360" key="GridCell.Tab.0.center" timestamp="1626093843347">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="460" key="GridCell.Tab.0.left/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626084032175" />
-    <state width="1899" height="460" key="GridCell.Tab.0.right" timestamp="1626084032176">
+    <state width="1899" height="360" key="GridCell.Tab.0.center/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626093843347" />
+    <state width="1899" height="360" key="GridCell.Tab.0.left" timestamp="1626093843347">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="460" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626084032176" />
+    <state width="1899" height="360" key="GridCell.Tab.0.left/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626093843347" />
+    <state width="1899" height="360" key="GridCell.Tab.0.right" timestamp="1626093843347">
+      <screen x="1600" y="-66" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="360" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626093843347" />
     <state x="2061" y="99" key="SettingsEditor" timestamp="1626083805456">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
     <state x="2061" y="99" key="SettingsEditor/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626083805456" />
-    <state x="2152" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626081525934">
+    <state x="2152" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626089723708">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state x="2152" y="187" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626081525934" />
+    <state x="2152" y="187" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626089723708" />
   </component>
 </project>
