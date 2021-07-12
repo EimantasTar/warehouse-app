@@ -11,20 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1589cedf-d118-4606-94af-891e4d6bba0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Screens/ProductCreateScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Screens/ProductEditScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Screens/ProductsListScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/constants/paths.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/PriceHistory.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/ProductDetails.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/ProductPreviewScreen.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/QuantityHistory.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/__test__/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/__test__/App.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/initialState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/initialState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/rootReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/rootReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +60,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\Screens\ProductPreviewScreen" />
       <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\App\__test__" />
       <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\App" />
     </key>
@@ -173,6 +167,10 @@
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
     <state width="1899" height="360" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626099286776" />
+    <state x="2235" y="156" key="RollbackChangesDialog" timestamp="1626103858748">
+      <screen x="1600" y="-66" width="1920" height="1040" />
+    </state>
+    <state x="2235" y="156" key="RollbackChangesDialog/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626103858748" />
     <state x="2061" y="99" key="SettingsEditor" timestamp="1626083805456">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
@@ -181,5 +179,9 @@
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
     <state x="2152" y="187" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626093938653" />
+    <state x="1692" y="26" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1626105381410">
+      <screen x="1600" y="-66" width="1920" height="1040" />
+    </state>
+    <state x="1692" y="26" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626105381410" />
   </component>
 </project>
