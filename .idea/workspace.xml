@@ -11,13 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1589cedf-d118-4606-94af-891e4d6bba0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/PriceHistory.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/ProductDetails.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/ProductPreviewScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/QuantityHistory.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organisms/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/__test__/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/__test__/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/ProductCreateScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductCreatePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/ProductEditScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductEditPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/PriceHistory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/PriceHistory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/ProductPreviewScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductPreviewPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/ProductPreviewScreen/QuantityHistory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/QuantityHistory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screens/ProductsListScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants/paths.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/paths.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +68,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\components\pages" />
+      <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\components\organisms" />
+      <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\components" />
       <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\Screens\ProductPreviewScreen" />
       <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\App\__test__" />
-      <recent name="C:\Users\Eimantas\WebstormProjects\warehouse-app\src\App" />
     </key>
   </component>
   <component name="RunManager" selected="npm.format">
@@ -151,22 +161,22 @@
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
     <state x="2290" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626090564722" />
-    <state width="1899" height="360" key="GridCell.Tab.0.bottom" timestamp="1626099286776">
+    <state width="1899" height="436" key="GridCell.Tab.0.bottom" timestamp="1626163047967">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626099286776" />
-    <state width="1899" height="360" key="GridCell.Tab.0.center" timestamp="1626099286776">
+    <state width="1899" height="436" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626163047967" />
+    <state width="1899" height="436" key="GridCell.Tab.0.center" timestamp="1626163047966">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.center/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626099286776" />
-    <state width="1899" height="360" key="GridCell.Tab.0.left" timestamp="1626099286775">
+    <state width="1899" height="436" key="GridCell.Tab.0.center/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626163047966" />
+    <state width="1899" height="436" key="GridCell.Tab.0.left" timestamp="1626163047966">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.left/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626099286775" />
-    <state width="1899" height="360" key="GridCell.Tab.0.right" timestamp="1626099286776">
+    <state width="1899" height="436" key="GridCell.Tab.0.left/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626163047966" />
+    <state width="1899" height="436" key="GridCell.Tab.0.right" timestamp="1626163047967">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626099286776" />
+    <state width="1899" height="436" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626163047967" />
     <state x="2235" y="156" key="RollbackChangesDialog" timestamp="1626103858748">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-const ProductsListScreen: FC = (): JSX.Element => {
+export const ProductsListPage: FC = (): JSX.Element => {
   return (
     <div className="App">
       <header className="App-header">
@@ -9,5 +9,3 @@ const ProductsListScreen: FC = (): JSX.Element => {
     </div>
   );
 };
-
-export default ProductsListScreen;

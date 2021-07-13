@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-const ProductCreateScreen: FC = (): JSX.Element => {
+export const ProductCreatePage: FC = (): JSX.Element => {
   return (
     <div>
       <header className="App-header">
@@ -9,5 +9,3 @@ const ProductCreateScreen: FC = (): JSX.Element => {
     </div>
   );
 };
-
-export default ProductCreateScreen;

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { useParams } from "react-router-dom";
 
-const ProductEditScreen: FC = (): JSX.Element => {
+export const ProductEditPage: FC = (): JSX.Element => {
   const { id }: { id: string | undefined } = useParams();
   return (
     <div>
@@ -11,5 +11,3 @@ const ProductEditScreen: FC = (): JSX.Element => {
     </div>
   );
 };
-
-export default ProductEditScreen;
