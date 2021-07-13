@@ -11,9 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1589cedf-d118-4606-94af-891e4d6bba0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gatsby-config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/MenuItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/HeaderLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/ScreenLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organisms/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ProductCreatePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductCreatePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ProductEditPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductEditPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ProductPreviewPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductPreviewPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -102,6 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1626081081701</updated>
       <workItem from="1626081082821" duration="2995000" />
+      <workItem from="1626166954257" duration="25380000" />
     </task>
     <task id="LOCAL-00001" summary="- create react app;">
       <created>1626081367873</created>
@@ -131,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626163138040</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- set up Chackra UI;">
+      <created>1626164766318</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626164766318</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,34 +167,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- create react app;" />
     <MESSAGE value="- set up redux toolkit;&#10;- reorganized file structure;" />
     <MESSAGE value="- reorganized files structure;" />
-    <option name="LAST_COMMIT_MESSAGE" value="- reorganized files structure;" />
+    <MESSAGE value="- set up Chackra UI;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- set up Chackra UI;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2290" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626090564722">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
     <state x="2290" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626090564722" />
-    <state width="1899" height="113" key="GridCell.Tab.0.bottom" timestamp="1626164560356">
+    <state width="1899" height="113" key="GridCell.Tab.0.bottom" timestamp="1626165826991">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="113" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626164560356" />
-    <state width="1899" height="113" key="GridCell.Tab.0.center" timestamp="1626164560356">
+    <state width="1899" height="113" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626165826991" />
+    <state width="1899" height="113" key="GridCell.Tab.0.center" timestamp="1626165826991">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="113" key="GridCell.Tab.0.center/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626164560356" />
-    <state width="1899" height="113" key="GridCell.Tab.0.left" timestamp="1626164560356">
+    <state width="1899" height="113" key="GridCell.Tab.0.center/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626165826991" />
+    <state width="1899" height="113" key="GridCell.Tab.0.left" timestamp="1626165826991">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="113" key="GridCell.Tab.0.left/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626164560356" />
-    <state width="1899" height="113" key="GridCell.Tab.0.right" timestamp="1626164560356">
+    <state width="1899" height="113" key="GridCell.Tab.0.left/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626165826991" />
+    <state width="1899" height="113" key="GridCell.Tab.0.right" timestamp="1626165826991">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="113" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626164560356" />
+    <state width="1899" height="113" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626165826991" />
     <state x="2235" y="156" key="RollbackChangesDialog" timestamp="1626103858748">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
@@ -183,10 +205,10 @@
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
     <state x="2061" y="99" key="SettingsEditor/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626083805456" />
-    <state x="2152" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626163142434">
+    <state x="2152" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626164768048">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state x="2152" y="187" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626163142434" />
+    <state x="2152" y="187" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626164768048" />
     <state x="1692" y="26" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1626105381410">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>

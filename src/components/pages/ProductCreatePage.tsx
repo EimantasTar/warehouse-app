@@ -1,11 +1,17 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
+import { ScreenLayout } from '../layouts';
+import { Flex, Heading } from '@chakra-ui/react';
 
 export const ProductCreatePage: FC = (): JSX.Element => {
-  return (
-    <div>
-      <header className="App-header">
-        <p>ProductCreateScreen</p>
-      </header>
-    </div>
-  );
+    return (
+        <ScreenLayout>
+            <Flex
+                justify="center"
+                width="100%"
+                paddingBlock={3}
+            >
+                <Heading size="md" color="main.900">Create new product</Heading>
+            </Flex>
+        </ScreenLayout>
+    );
 };
