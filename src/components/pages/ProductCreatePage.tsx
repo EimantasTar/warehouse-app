@@ -7,7 +7,7 @@ export const ProductCreatePage: FC = (): JSX.Element => {
   return (
     <ScreenLayout>
       <TopSection justify="center">
-        <Heading size="md" color="main.900">
+        <Heading size="md" color="main.800">
           Create new product
         </Heading>
       </TopSection>

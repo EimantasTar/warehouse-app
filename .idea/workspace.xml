@@ -11,14 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1589cedf-d118-4606-94af-891e4d6bba0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/TopSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/MenuItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/LinkItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ProductCreatePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductCreatePage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626194343057</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- added TopSection.tsx to organisms;">
+      <created>1626248893651</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626248893651</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,29 +177,34 @@
     <MESSAGE value="- reorganized files structure;" />
     <MESSAGE value="- set up Chackra UI;" />
     <MESSAGE value="- added HeaderLayout.tsx, ScreenLayout.tsx to layouts;&#10;- added MenuItem.tsx to atoms;&#10;- added Header.tsx to organisms;&#10;- updated UI of ProductsListPage;" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added HeaderLayout.tsx, ScreenLayout.tsx to layouts;&#10;- added MenuItem.tsx to atoms;&#10;- added Header.tsx to organisms;&#10;- updated UI of ProductsListPage;" />
+    <MESSAGE value="- added TopSection.tsx to organisms;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added TopSection.tsx to organisms;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2290" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626090564722">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
     <state x="2290" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626090564722" />
-    <state width="1899" height="405" key="GridCell.Tab.0.bottom" timestamp="1626194436641">
+    <state x="2340" y="209" key="FileChooserDialogImpl" timestamp="1626252739151">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="405" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626194436641" />
-    <state width="1899" height="405" key="GridCell.Tab.0.center" timestamp="1626194436641">
+    <state x="2340" y="209" key="FileChooserDialogImpl/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626252739151" />
+    <state width="1899" height="405" key="GridCell.Tab.0.bottom" timestamp="1626248840952">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="405" key="GridCell.Tab.0.center/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626194436641" />
-    <state width="1899" height="405" key="GridCell.Tab.0.left" timestamp="1626194436641">
+    <state width="1899" height="405" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626248840952" />
+    <state width="1899" height="405" key="GridCell.Tab.0.center" timestamp="1626248840952">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="405" key="GridCell.Tab.0.left/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626194436641" />
-    <state width="1899" height="405" key="GridCell.Tab.0.right" timestamp="1626194436641">
+    <state width="1899" height="405" key="GridCell.Tab.0.center/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626248840952" />
+    <state width="1899" height="405" key="GridCell.Tab.0.left" timestamp="1626248840952">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="405" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626194436641" />
+    <state width="1899" height="405" key="GridCell.Tab.0.left/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626248840952" />
+    <state width="1899" height="405" key="GridCell.Tab.0.right" timestamp="1626248840952">
+      <screen x="1600" y="-66" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="405" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626248840952" />
     <state x="2235" y="156" key="RollbackChangesDialog" timestamp="1626103858748">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
@@ -204,10 +213,10 @@
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
     <state x="2061" y="99" key="SettingsEditor/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626083805456" />
-    <state x="2152" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626194351820">
+    <state x="2152" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626248899805">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state x="2152" y="187" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626194351820" />
+    <state x="2152" y="187" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626248899805" />
     <state x="1692" y="26" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1626105381410">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>

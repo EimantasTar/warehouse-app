@@ -1,8 +1,8 @@
 import React, { FC } from "react";
+import { SmallAddIcon } from "@chakra-ui/icons";
 import { Flex, Heading, IconButton } from "@chakra-ui/react";
 import { ScreenLayout } from "../layouts";
 import { TopSection } from "../organisms";
-import { SmallAddIcon } from "@chakra-ui/icons";
 import { PRODUCT_CREATE_PATH } from "../../utils/constants/paths";
 import { LinkItem } from "../atoms";
 
@@ -30,11 +30,12 @@ export const ProductsListPage: FC = (): JSX.Element => {
               bg: "green.800",
               borderColor: "green.800",
             }}
+            children={null}
           />
         </LinkItem>
       </TopSection>
       <Flex justify="center" width="100%" paddingBlock={3}>
-        <Heading size="md" color="main.900">
+        <Heading size="md" color="main.800">
           Products list
         </Heading>
       </Flex>
