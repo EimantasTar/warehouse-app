@@ -1,5 +1,1 @@
-export const productTypes = [
-    "Trousers",
-    "Footwear",
-    "Accessories"
-];
+export const productTypes = ["Trousers", "Footwear", "Accessories"];
