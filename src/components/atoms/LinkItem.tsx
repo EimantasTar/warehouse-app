@@ -7,7 +7,7 @@ interface Props {
   outsideHeader: boolean;
 }
 
-export const MenuItem: FC<Props> = (props) => {
+export const LinkItem: FC<Props> = (props) => {
   const { children, to = "/", outsideHeader } = props;
   const { pathname } = useLocation();
   return (

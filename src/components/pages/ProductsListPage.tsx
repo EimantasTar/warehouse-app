@@ -1,15 +1,16 @@
 import React, { FC } from "react";
 import { Flex, Heading, IconButton } from "@chakra-ui/react";
-import { PRODUCT_CREATE_PATH } from "../../utils/constants/paths";
-import { SmallAddIcon } from "@chakra-ui/icons";
-import { MenuItem } from "../atoms";
 import { ScreenLayout } from "../layouts";
+import { TopSection } from "../organisms";
+import { SmallAddIcon } from "@chakra-ui/icons";
+import { PRODUCT_CREATE_PATH } from "../../utils/constants/paths";
+import { LinkItem } from "../atoms";
 
 export const ProductsListPage: FC = (): JSX.Element => {
   return (
     <ScreenLayout>
-      <Flex justify="flex-end" width="100%" paddingBlock={3}>
-        <MenuItem to={PRODUCT_CREATE_PATH} outsideHeader={true}>
+      <TopSection justify="flex-end">
+        <LinkItem to={PRODUCT_CREATE_PATH} outsideHeader={true}>
           <IconButton
             aria-label="Add product"
             variant="solid"
@@ -30,8 +31,8 @@ export const ProductsListPage: FC = (): JSX.Element => {
               borderColor: "green.800",
             }}
           />
-        </MenuItem>
-      </Flex>
+        </LinkItem>
+      </TopSection>
       <Flex justify="center" width="100%" paddingBlock={3}>
         <Heading size="md" color="main.900">
           Products list

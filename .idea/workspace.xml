@@ -11,18 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1589cedf-d118-4606-94af-891e4d6bba0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/organisms/TopSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/MenuItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/MenuItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/MenuItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/LinkItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/atoms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/HeaderLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/HeaderLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/ScreenLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/ScreenLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ProductCreatePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductCreatePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ProductEditPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductEditPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ProductPreviewPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductPreviewPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

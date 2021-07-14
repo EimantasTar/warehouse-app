@@ -5,7 +5,7 @@ import {
   PRODUCT_CREATE_PATH,
   PRODUCTS_LIST_PATH,
 } from "../../utils/constants/paths";
-import { MenuItem } from "../atoms";
+import { LinkItem } from "../atoms";
 
 export const Header: FC = (): JSX.Element => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -46,12 +46,12 @@ export const Header: FC = (): JSX.Element => {
             mb={{ base: 3, md: 0 }}
             pb={{ base: 0, md: 0 }}
           />
-          <MenuItem to={PRODUCTS_LIST_PATH} outsideHeader={false}>
+          <LinkItem to={PRODUCTS_LIST_PATH} outsideHeader={false}>
             Products
-          </MenuItem>
-          <MenuItem to={PRODUCT_CREATE_PATH} outsideHeader={false}>
+          </LinkItem>
+          <LinkItem to={PRODUCT_CREATE_PATH} outsideHeader={false}>
             Add product
-          </MenuItem>
+          </LinkItem>
         </Flex>
       </Box>
     </Flex>
