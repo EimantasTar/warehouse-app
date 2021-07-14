@@ -9,6 +9,11 @@ const simpleTextInputValidation = (
   return error;
 };
 
+const countDecimals = (value: number) => {
+  if (Math.floor(value) === value) return 0;
+  return value.toString().split(".")[1].length || 0;
+};
+
 export const validateName = (value: string): string | undefined => {
   return simpleTextInputValidation(value, "Name");
 };
@@ -41,18 +46,17 @@ export const validateColor = (value: string): string | undefined => {
 
 export const validateQuantity = (value: number): string | undefined => {
   let error;
+  const length: number = value ? countDecimals(value) : 0;
   if (!value && value !== 0) {
     error = "Quantity is required!";
+  } else if (length > 0 || value < 0) {
+    error = "Entered quantity is not valid!";
   }
   return error;
 };
 
 export const validatePrice = (value: number): string | undefined => {
   let error;
-  const countDecimals = (value: number) => {
-    if (Math.floor(value) === value) return 0;
-    return value.toString().split(".")[1].length || 0;
-  };
   const length: number = value ? countDecimals(value) : 0;
   if (!value || value === 0) {
     error = "Price is required!";

@@ -1,6 +1,6 @@
-export { PriceHistory } from "./PriceHistory";
-export { ProductDetails } from "./ProductDetails";
-export { QuantityHistory } from "./QuantityHistory";
-export { Header } from "./Header";
-export { TopSection } from "./TopSection";
-export { ProductInputForm } from "./ProductInputForm";
+export { default as Header } from "./Header";
+export { default as PriceHistory } from "./PriceHistory";
+export { default as ProductDetails } from "./ProductDetails";
+export { default as ProductInputForm } from "./ProductInputForm";
+export { default as QuantityHistory } from "./QuantityHistory";
+export { default as TopSection } from "./TopSection";

@@ -1,4 +1,4 @@
-export { ProductCreatePage } from "./ProductCreatePage";
-export { ProductEditPage } from "./ProductEditPage";
-export { ProductPreviewPage } from "./ProductPreviewPage";
-export { ProductsListPage } from "./ProductsListPage";
+export { default as ProductCreatePage } from "./ProductCreatePage";
+export { default as ProductEditPage } from "./ProductEditPage";
+export { default as ProductPreviewPage } from "./ProductPreviewPage";
+export { default as ProductsListPage } from "./ProductsListPage";

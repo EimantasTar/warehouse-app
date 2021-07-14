@@ -1,10 +1,11 @@
+import { Button } from "@chakra-ui/react";
 import React, { FC, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ScreenLayout } from "../layouts";
 import { PriceHistory, ProductDetails, QuantityHistory } from "../organisms";
 
-export const ProductPreviewPage: FC = (): JSX.Element => {
-  let { id }: { id: string | undefined } = useParams();
+const ProductPreviewPage: FC = (): JSX.Element => {
+  const { id }: { id: string | undefined } = useParams();
   const [selectedTab, setSelectedTab] = useState<
     "productDetails" | "priceHistory" | "quantityHistory"
   >("productDetails");
@@ -14,12 +15,20 @@ export const ProductPreviewPage: FC = (): JSX.Element => {
         <header className="App-header">
           <p>ProductPreviewScreen {id}</p>
           <ul>
-            <li onClick={() => setSelectedTab("productDetails")}>
-              productDetails
+            <li>
+              <Button onClick={() => setSelectedTab("productDetails")}>
+                productDetails
+              </Button>
             </li>
-            <li onClick={() => setSelectedTab("priceHistory")}>priceHistory</li>
-            <li onClick={() => setSelectedTab("quantityHistory")}>
-              quantityHistory
+            <li>
+              <Button onClick={() => setSelectedTab("priceHistory")}>
+                priceHistory
+              </Button>
+            </li>
+            <li>
+              <Button onClick={() => setSelectedTab("quantityHistory")}>
+                quantityHistory
+              </Button>
             </li>
           </ul>
         </header>
@@ -34,3 +43,5 @@ export const ProductPreviewPage: FC = (): JSX.Element => {
     </ScreenLayout>
   );
 };
+
+export default ProductPreviewPage;

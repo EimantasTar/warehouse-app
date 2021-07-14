@@ -1,1 +1,3 @@
-export const productTypes = ["Trousers", "Footwear", "Accessories"];
+const productTypes = ["Trousers", "Footwear", "Accessories"];
+
+export default productTypes;

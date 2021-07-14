@@ -1,5 +1,15 @@
-export interface IInitialState {}
+import { ProductState } from "./types/productState";
 
-const initialState: IInitialState = {};
+export interface IInitialState {
+  product: ProductState;
+}
+
+const initialState: IInitialState = {
+  product: {
+    isFetching: false,
+    data: [],
+    error: null,
+  },
+};
 
 export default initialState;

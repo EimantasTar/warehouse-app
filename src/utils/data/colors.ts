@@ -1,4 +1,4 @@
-export const colorNames = [
+const colorNames = [
   "Red",
   "Blue",
   "Yellow",
@@ -10,3 +10,5 @@ export const colorNames = [
   "Green",
   "Pink",
 ];
+
+export default colorNames;

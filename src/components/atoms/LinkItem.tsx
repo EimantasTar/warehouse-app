@@ -1,13 +1,14 @@
 import { Text } from "@chakra-ui/react";
 import { Link, useLocation } from "react-router-dom";
-import React, { FC } from "react";
+import React from "react";
 
 interface Props {
   to: string;
   outsideHeader: boolean;
+  children: string | JSX.Element;
 }
 
-export const LinkItem: FC<Props> = (props) => {
+const LinkItem = (props: Props): JSX.Element => {
   const { children, to = "/", outsideHeader } = props;
   const { pathname } = useLocation();
   return (
@@ -35,3 +36,5 @@ export const LinkItem: FC<Props> = (props) => {
     </Text>
   );
 };
+
+export default LinkItem;

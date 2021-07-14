@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import { ScreenLayout } from "../layouts";
 import { Heading, Stack } from "@chakra-ui/react";
+import { ScreenLayout } from "../layouts";
 import { ProductInputForm, TopSection } from "../organisms";
 
-export const ProductCreatePage: FC = (): JSX.Element => {
+const ProductCreatePage: FC = (): JSX.Element => {
   return (
     <ScreenLayout>
       <TopSection justify="center">
@@ -27,3 +27,5 @@ export const ProductCreatePage: FC = (): JSX.Element => {
     </ScreenLayout>
   );
 };
+
+export default ProductCreatePage;

@@ -1,9 +1,11 @@
-import React, { FC } from "react";
+import React from "react";
 import { Stack } from "@chakra-ui/react";
 
-interface Props {}
+interface Props {
+  children: JSX.Element | JSX.Element[];
+}
 
-export const ScreenLayout: FC<Props> = ({ children }) => {
+const ScreenLayout = ({ children }: Props): JSX.Element => {
   return (
     <Stack
       direction="column"
@@ -18,3 +20,5 @@ export const ScreenLayout: FC<Props> = ({ children }) => {
     </Stack>
   );
 };
+
+export default ScreenLayout;

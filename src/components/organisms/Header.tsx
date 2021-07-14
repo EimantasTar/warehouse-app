@@ -7,7 +7,7 @@ import {
 } from "../../utils/constants/paths";
 import { LinkItem } from "../atoms";
 
-export const Header: FC = (): JSX.Element => {
+const Header: FC = (): JSX.Element => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleToggle = () => (isOpen ? onClose() : onOpen());
 
@@ -25,7 +25,7 @@ export const Header: FC = (): JSX.Element => {
       color="white"
     >
       <Flex align="center" mr={5}>
-        <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+        <Heading as="h1" size="lg" letterSpacing="tighter">
           Warehouse App
         </Heading>
       </Flex>
@@ -57,3 +57,5 @@ export const Header: FC = (): JSX.Element => {
     </Flex>
   );
 };
+
+export default Header;

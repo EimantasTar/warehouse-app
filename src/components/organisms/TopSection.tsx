@@ -1,14 +1,17 @@
-import React, { FC } from "react";
+import React from "react";
 import { Flex } from "@chakra-ui/react";
 
 interface Props {
+  children?: JSX.Element;
   justify: string;
 }
 
-export const TopSection: FC<Props> = ({ children, justify }): JSX.Element => {
+const TopSection = ({ children, justify }: Props): JSX.Element => {
   return (
     <Flex justify={justify} width="100%" paddingBlock={3}>
-      {children}
+      {children || null}
     </Flex>
   );
 };
+
+export default TopSection;

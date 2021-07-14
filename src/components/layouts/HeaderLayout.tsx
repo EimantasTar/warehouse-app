@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex } from "@chakra-ui/react";
 
-export const HeaderLayout = ({ children }: { children: any }) => {
+const HeaderLayout = ({ children }: { children: JSX.Element }): JSX.Element => {
   return (
     <Flex
       direction="column"
@@ -13,3 +13,5 @@ export const HeaderLayout = ({ children }: { children: any }) => {
     </Flex>
   );
 };
+
+export default HeaderLayout;
