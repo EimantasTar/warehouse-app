@@ -11,7 +11,7 @@ const simpleTextInputValidation = (
 
 const countDecimals = (value: number) => {
   if (Math.floor(value) === value) return 0;
-  return value.toString().split(".")[1].length || 0;
+  return value.toString().split(".")[1]?.length || 0;
 };
 
 export const validateName = (value: string): string | undefined => {

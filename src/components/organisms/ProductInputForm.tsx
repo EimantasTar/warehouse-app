@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Checkbox, FormControl, FormLabel } from "@chakra-ui/react";
 import { Field, Form, Formik, FormikHelpers, FormikValues } from "formik";
+import { useDispatch } from "react-redux";
+import { Dispatch } from "redux";
 import {
   validateColor,
   validateEAN,
@@ -13,6 +15,8 @@ import {
 import InputField from "../molecules/InputField";
 import productTypes from "../../utils/data/products";
 import colorNames from "../../utils/data/colors";
+import { addProduct } from "../../store/slices/productSlice";
+import { Product } from "../../store/types/productState";
 
 interface FormInputValues {
   name: string;
@@ -25,12 +29,26 @@ interface FormInputValues {
 }
 
 const ProductInputForm = (): JSX.Element => {
+  const dispatch: Dispatch<any> = useDispatch();
   const handleSubmit = (
     values: FormikValues,
     actions: FormikHelpers<FormInputValues>
   ) => {
-    console.log(values);
-    actions.setSubmitting(false);
+    const newProduct: Product = {
+      id: new Date().getTime(),
+      name: values.name,
+      EAN: values.EAN,
+      type: values.type,
+      weight: values.weight,
+      color: values.color,
+      isActive: values.active,
+      quantity: values.quantity,
+      price: values.price,
+    };
+    dispatch(addProduct(newProduct));
+    setTimeout(() => {
+      actions.setSubmitting(false);
+    }, 1000);
   };
 
   return (
