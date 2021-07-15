@@ -11,13 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1589cedf-d118-4606-94af-891e4d6bba0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/slices/productSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecules/TableRow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecules/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organisms/TableComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslint" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/ProductInputForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/ProductInputForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/rootReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/rootReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/types/productState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/types/productState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/functions/validations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/functions/validations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/productSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/productSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
