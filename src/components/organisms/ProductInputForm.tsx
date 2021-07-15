@@ -11,6 +11,8 @@ import {
   validateWeight,
 } from "../../utils/functions/validations";
 import InputField from "../molecules/InputField";
+import productTypes from "../../utils/data/products";
+import colorNames from "../../utils/data/colors";
 
 interface FormInputValues {
   name: string;
@@ -27,6 +29,7 @@ const ProductInputForm = (): JSX.Element => {
     values: FormikValues,
     actions: FormikHelpers<FormInputValues>
   ) => {
+    console.log(values);
     actions.setSubmitting(false);
   };
 
@@ -65,6 +68,7 @@ const ProductInputForm = (): JSX.Element => {
             label="Type"
             placeholder="Select product type"
             inputType="select"
+            selectItems={productTypes}
           />
           <InputField
             name="weight"
@@ -80,6 +84,7 @@ const ProductInputForm = (): JSX.Element => {
             label="Color"
             placeholder="Select product color"
             inputType="select"
+            selectItems={colorNames}
           />
           <Field name="active">
             {({ field }: { field: any }) => (
@@ -89,7 +94,7 @@ const ProductInputForm = (): JSX.Element => {
                   {...field}
                   size="lg"
                   colorScheme="green"
-                  defaultIsChecked
+                  defaultIsChecked={false}
                 >
                   Is product active?
                 </Checkbox>

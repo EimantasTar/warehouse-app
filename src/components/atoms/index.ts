@@ -1,2 +1,5 @@
 export { default as LinkItem } from "./LinkItem";
-export { default as FormControlItem } from "./FormControlItem";
+export { default as NumberInputItem } from "./NumberInputItem";
+export { default as SelectInputItem } from "./SelectInputItem";
+export { default as TextInputItem } from "./TextInputItem";
+export { default as GroupInputItem } from "./GroupInputItem";
