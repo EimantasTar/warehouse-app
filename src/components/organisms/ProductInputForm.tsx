@@ -28,6 +28,7 @@ interface FormInputValues {
   color: string;
   active: boolean;
   quantity: number;
+  price: number;
 }
 
 const ProductInputForm = (): JSX.Element => {
@@ -61,12 +62,13 @@ const ProductInputForm = (): JSX.Element => {
     <Formik
       initialValues={{
         name: "",
-        EAN: 0,
+        EAN: NaN,
         type: "",
-        weight: 0,
+        weight: NaN,
         color: "",
         active: false,
-        quantity: 0,
+        quantity: NaN,
+        price: NaN,
       }}
       onSubmit={(values, actions) => handleSubmit(values, actions)}
     >

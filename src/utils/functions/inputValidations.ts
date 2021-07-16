@@ -20,7 +20,7 @@ export const validateName = (value: string): string | undefined => {
 
 export const validateEAN = (value: number): string | undefined => {
   let error;
-  if (!value) {
+  if (!value && value !== 0) {
     error = "EAN is required!";
   } else if (value.toString().length !== 13 && value.toString().length !== 12) {
     error = "EAN must be 12 or 13 digits long!";
@@ -34,8 +34,13 @@ export const validateType = (value: string): string | undefined => {
 
 export const validateWeight = (value: number): string | undefined => {
   let error;
-  if (!value || value === 0) {
+  const length: number = value ? countDecimals(value) : 0;
+  if (!value && value !== 0) {
     error = "Weight is required!";
+  } else if (length > 0 || value < 0) {
+    error = "Entered weight is not valid!";
+  } else if (value === 0) {
+    error = "Weight can not be 0!";
   }
   return error;
 };
@@ -58,10 +63,12 @@ export const validateQuantity = (value: number): string | undefined => {
 export const validatePrice = (value: number): string | undefined => {
   let error;
   const length: number = value ? countDecimals(value) : 0;
-  if (!value || value === 0) {
+  if (!value && value !== 0) {
     error = "Price is required!";
   } else if (length > 2 || value < 0) {
     error = "Entered price is not valid!";
+  } else if (value === 0) {
+    error = "Price can not be 0!";
   }
   return error;
 };
