@@ -1,38 +1,79 @@
-import { Checkbox, Td, Tr } from "@chakra-ui/react";
-import React, { Dispatch } from "react";
+import { Box, Checkbox, Flex, Td, Tr } from "@chakra-ui/react";
+import React, { Dispatch, useState } from "react";
 import { useDispatch } from "react-redux";
 import { AsyncThunkAction } from "@reduxjs/toolkit";
 import { updateProduct } from "../../store/slices/productSlice";
 import { Product } from "../../store/types/productState";
+import { ListItemButton, ListItemInput } from "../atoms";
 
 const TableRow = ({ product }: { product: Product }): JSX.Element => {
+  const {
+    name,
+    EAN,
+    type,
+    weight,
+    color,
+    quantity,
+    price,
+    isActive,
+  }: {
+    name: string;
+    EAN: number;
+    type: string;
+    weight: number;
+    color: string;
+    quantity: number;
+    price: number;
+    isActive: boolean;
+  } = product;
   const dispatch: Dispatch<
     AsyncThunkAction<Product, Product, { rejectValue: string }>
   > = useDispatch();
-  const handleChange = () => {
+  const [newQuantity, setNewQuantity] = useState<number>(quantity);
+  const handleChangeActive = () => {
     dispatch(
       updateProduct({
         ...product,
-        isActive: !product.isActive,
+        isActive: !isActive,
       })
     );
+  };
+  const handleSaveQuantity = () => {
+    dispatch(
+      updateProduct({
+        ...product,
+        quantity: newQuantity,
+      })
+    );
+  };
+  const handleChangeQuantity = (valueAsNumber: number) => {
+    setNewQuantity(valueAsNumber);
   };
 
   return (
     <Tr>
-      <Td>{product.name}</Td>
-      <Td>{product.EAN}</Td>
-      <Td>{product.type}</Td>
-      <Td>{product.weight}</Td>
-      <Td>{product.color}</Td>
-      <Td>{product.quantity}</Td>
-      <Td>{product.price}</Td>
+      <Td>{name}</Td>
+      <Td>{EAN}</Td>
+      <Td>{type}</Td>
+      <Td>{weight}</Td>
+      <Td>{color}</Td>
+      <Td>
+        <Flex alignItems="center" direction="row">
+          <Box width="30px">{quantity}</Box>
+          <ListItemInput
+            quantity={quantity}
+            handleChange={handleChangeQuantity}
+          />
+          <ListItemButton handleClick={handleSaveQuantity} />
+        </Flex>
+      </Td>
+      <Td>{price}</Td>
       <Td>
         <Checkbox
           size="lg"
           colorScheme="green"
-          isChecked={product.isActive}
-          onChange={handleChange}
+          isChecked={isActive}
+          onChange={handleChangeActive}
         />
       </Td>
     </Tr>

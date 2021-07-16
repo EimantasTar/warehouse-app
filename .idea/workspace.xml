@@ -11,17 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1589cedf-d118-4606-94af-891e4d6bba0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/functions/localStorageFunctions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/ListItemButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/ListItemInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecules/TableRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/TableRow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/ProductInputForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/ProductInputForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/TableComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/TableComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ProductsListPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/slices/productSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/productSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/functions/validations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/functions/inputValidations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626365565226</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- exported localStorageFunctions.ts;&#10;- exported pendingStateUpdate and rejectStateUpdate functions in productSlice.ts;">
+      <created>1626427233482</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626427233482</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +225,8 @@
     <MESSAGE value="- lint format run;" />
     <MESSAGE value="- reorganized InputField.tsx component (split different input types to separate atoms);" />
     <MESSAGE value="- added TableComponent.tsx with exported TableRow.tsx;&#10;- update product flow is in progress;" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added TableComponent.tsx with exported TableRow.tsx;&#10;- update product flow is in progress;" />
+    <MESSAGE value="- exported localStorageFunctions.ts;&#10;- exported pendingStateUpdate and rejectStateUpdate functions in productSlice.ts;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- exported localStorageFunctions.ts;&#10;- exported pendingStateUpdate and rejectStateUpdate functions in productSlice.ts;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2290" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626283532202">
@@ -232,25 +237,25 @@
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
     <state x="2340" y="209" key="FileChooserDialogImpl/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626252739151" />
-    <state width="1899" height="93" key="GridCell.Tab.0.bottom" timestamp="1626427130729">
+    <state width="1899" height="305" key="GridCell.Tab.0.bottom" timestamp="1626435104234">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="93" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626427130729" />
+    <state width="1899" height="305" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626435104234" />
     <state width="1899" height="156" key="GridCell.Tab.0.bottom/1600.-66.1920.1040/-1920.-66.1920.1040/0.0.1600.860@1600.-66.1920.1040" timestamp="1626354796569" />
-    <state width="1899" height="93" key="GridCell.Tab.0.center" timestamp="1626427130728">
+    <state width="1899" height="305" key="GridCell.Tab.0.center" timestamp="1626435104234">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="93" key="GridCell.Tab.0.center/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626427130728" />
+    <state width="1899" height="305" key="GridCell.Tab.0.center/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626435104234" />
     <state width="1899" height="156" key="GridCell.Tab.0.center/1600.-66.1920.1040/-1920.-66.1920.1040/0.0.1600.860@1600.-66.1920.1040" timestamp="1626354796569" />
-    <state width="1899" height="93" key="GridCell.Tab.0.left" timestamp="1626427130728">
+    <state width="1899" height="305" key="GridCell.Tab.0.left" timestamp="1626435104234">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="93" key="GridCell.Tab.0.left/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626427130728" />
+    <state width="1899" height="305" key="GridCell.Tab.0.left/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626435104234" />
     <state width="1899" height="156" key="GridCell.Tab.0.left/1600.-66.1920.1040/-1920.-66.1920.1040/0.0.1600.860@1600.-66.1920.1040" timestamp="1626354796569" />
-    <state width="1899" height="93" key="GridCell.Tab.0.right" timestamp="1626427130729">
+    <state width="1899" height="305" key="GridCell.Tab.0.right" timestamp="1626435104234">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state width="1899" height="93" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626427130729" />
+    <state width="1899" height="305" key="GridCell.Tab.0.right/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626435104234" />
     <state width="1899" height="156" key="GridCell.Tab.0.right/1600.-66.1920.1040/-1920.-66.1920.1040/0.0.1600.860@1600.-66.1920.1040" timestamp="1626354796569" />
     <state x="2235" y="156" key="RollbackChangesDialog" timestamp="1626424274755">
       <screen x="1600" y="-66" width="1920" height="1040" />
@@ -261,10 +266,10 @@
     </state>
     <state x="2061" y="99" key="SettingsEditor/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626422882832" />
     <state x="2061" y="99" key="SettingsEditor/1600.-66.1920.1040/-1920.-66.1920.1040/0.0.1600.860@1600.-66.1920.1040" timestamp="1626349898240" />
-    <state x="2152" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626424284070">
+    <state x="2152" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626427236709">
       <screen x="1600" y="-66" width="1920" height="1040" />
     </state>
-    <state x="2152" y="187" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626424284070" />
+    <state x="2152" y="187" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.-66.1920.1040/-1920.-66.1920.1040@1600.-66.1920.1040" timestamp="1626427236709" />
     <state x="2152" y="187" key="Vcs.Push.Dialog.v2/1600.-66.1920.1040/-1920.-66.1920.1040/0.0.1600.860@1600.-66.1920.1040" timestamp="1626365566806" />
     <state x="1692" y="26" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1626105381410">
       <screen x="1600" y="-66" width="1920" height="1040" />

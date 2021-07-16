@@ -22,10 +22,10 @@ const TableComponent = ({ data }: { data: Product[] }): JSX.Element => {
           <Th>Name</Th>
           <Th>EAN</Th>
           <Th>Type</Th>
-          <Th>Weight</Th>
+          <Th>Weight (g)</Th>
           <Th>Color</Th>
           <Th>Quantity</Th>
-          <Th>Price</Th>
+          <Th>Price (EUR)</Th>
           <Th>Active</Th>
         </Tr>
       </Thead>
