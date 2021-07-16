@@ -12,7 +12,7 @@ import {
   validateQuantity,
   validateType,
   validateWeight,
-} from "../../utils/functions/validations";
+} from "../../utils/functions/inputValidations";
 import InputField from "../molecules/InputField";
 import productTypes from "../../utils/data/products";
 import colorNames from "../../utils/data/colors";
