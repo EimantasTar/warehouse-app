@@ -8,20 +8,35 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-const ListItemInput = ({
-  quantity,
-  handleChange,
-}: {
-  quantity: number;
+interface Props {
+  value: number;
   handleChange: (value: number) => void;
-}): JSX.Element => {
+  precision: number;
+  min: number;
+  max: number;
+  step: number;
+  width: string;
+}
+
+const ListItemInput = ({
+  value,
+  handleChange,
+  precision,
+  min,
+  max,
+  step,
+  width,
+}: Props): JSX.Element => {
   return (
     <NumberInput
-      width="76px"
-      ml={3}
+      width={width}
+      ml={2}
       size="sm"
-      defaultValue={quantity}
-      min={0}
+      defaultValue={value}
+      precision={precision}
+      min={min}
+      max={max}
+      step={step}
       onChange={(valueAsString, valueAsNumber) => handleChange(valueAsNumber)}
     >
       <NumberInputField />
