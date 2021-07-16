@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Dispatch } from "react";
 import { Button, Checkbox, FormControl, FormLabel } from "@chakra-ui/react";
 import { Field, Form, Formik, FormikHelpers, FormikValues } from "formik";
 import { useDispatch } from "react-redux";
-import { Dispatch } from "redux";
+import { useHistory } from "react-router-dom";
+import { AsyncThunkAction } from "@reduxjs/toolkit";
 import {
   validateColor,
   validateEAN,
@@ -17,6 +18,7 @@ import productTypes from "../../utils/data/products";
 import colorNames from "../../utils/data/colors";
 import { addProduct } from "../../store/slices/productSlice";
 import { Product } from "../../store/types/productState";
+import { PRODUCTS_LIST_PATH } from "../../utils/constants/paths";
 
 interface FormInputValues {
   name: string;
@@ -29,7 +31,10 @@ interface FormInputValues {
 }
 
 const ProductInputForm = (): JSX.Element => {
-  const dispatch: Dispatch<any> = useDispatch();
+  const dispatch: Dispatch<
+    AsyncThunkAction<Product, Product, { rejectValue: string }>
+  > = useDispatch();
+  const { push }: { push: (path: string) => void } = useHistory();
   const handleSubmit = (
     values: FormikValues,
     actions: FormikHelpers<FormInputValues>
@@ -48,6 +53,7 @@ const ProductInputForm = (): JSX.Element => {
     dispatch(addProduct(newProduct));
     setTimeout(() => {
       actions.setSubmitting(false);
+      push(PRODUCTS_LIST_PATH);
     }, 1000);
   };
 
