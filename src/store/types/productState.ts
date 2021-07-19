@@ -1,9 +1,11 @@
 export interface QH {
+  id: number;
   timeChanged: Date;
   value: number;
 }
 
 export interface PH {
+  id: number;
   timeChanged: Date;
   value: number;
 }
@@ -18,12 +20,14 @@ export interface Product {
   isActive: boolean;
   quantity: number;
   price: number;
-  // quantityHistory: QH[];
-  // priceHistory: PH[];
 }
 
 export interface ProductState {
   isFetching: boolean;
-  data: Product[];
+  data: {
+    productItems: Product[];
+    quantityHItems: QH[];
+    priceHItems: PH[];
+  };
   error: null | string | Error;
 }

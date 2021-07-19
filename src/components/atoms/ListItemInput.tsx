@@ -31,7 +31,7 @@ const ListItemInput = ({
     <NumberInput
       width={width}
       ml={2}
-      size="sm"
+      size="xs"
       defaultValue={value}
       precision={precision}
       min={min}

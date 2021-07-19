@@ -50,6 +50,18 @@ const ProductInputForm = (): JSX.Element => {
       isActive: values.active,
       quantity: values.quantity,
       price: values.price,
+      // quantityHistory: [
+      //   {
+      //     timeChanged: new Date(),
+      //     value: values.quantity
+      //   }
+      // ],
+      // priceHistory: [
+      //   {
+      //     timeChanged: new Date(),
+      //     value: values.price
+      //   }
+      // ]
     };
     dispatch(addProduct(newProduct));
     setTimeout(() => {

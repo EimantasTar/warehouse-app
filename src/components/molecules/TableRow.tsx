@@ -3,7 +3,7 @@ import React, { Dispatch, useState } from "react";
 import { useDispatch } from "react-redux";
 import { AsyncThunkAction } from "@reduxjs/toolkit";
 import { updateProduct } from "../../store/slices/productSlice";
-import { Product } from "../../store/types/productState";
+import { Product, QH } from "../../store/types/productState";
 import { ListItemButton, ListItemInput } from "../atoms";
 import {
   maxPriceValue,
@@ -31,10 +31,17 @@ const TableRow = ({ product }: { product: Product }): JSX.Element => {
     );
   };
   const handleSaveQuantity = () => {
+    debugger;
+    // const newHistory: QH[] = Object.assign([], quantityHistory);
+    // newHistory.push({
+    //     timeChanged: new Date(),
+    //     value: newQuantity
+    // });
     dispatch(
       updateProduct({
         ...product,
         quantity: newQuantity,
+        // quantityHistory: newHistory
       })
     );
   };
@@ -69,7 +76,7 @@ const TableRow = ({ product }: { product: Product }): JSX.Element => {
             precision={0}
             min={minQuantityValue}
             max={maxQuantityValue}
-            width="76px"
+            width="70px"
             step={quantityStepValue}
           />
           <ListItemButton handleClick={handleSaveQuantity} />
@@ -84,7 +91,7 @@ const TableRow = ({ product }: { product: Product }): JSX.Element => {
             precision={2}
             min={minPriceValue}
             max={maxPriceValue}
-            width="95px"
+            width="85px"
             step={priceStepValue}
           />
           <ListItemButton handleClick={handleSavePrice} />

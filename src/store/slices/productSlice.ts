@@ -1,12 +1,13 @@
 import { createAsyncThunk, createSlice, Draft } from "@reduxjs/toolkit";
 import initialState from "../initialState";
-import { Product, ProductState } from "../types/productState";
+import { PH, Product, ProductState, QH } from '../types/productState';
 import {
+  addHistoryItem,
   addItem,
   getAllItems,
-  parseAllItems,
+  parseAllItems, parseHistoryItems,
   updateItem,
-} from "../../utils/functions/localStorageFunctions";
+} from '../../utils/functions/localStorageFunctions';
 
 const sliceName = "product";
 
@@ -17,7 +18,9 @@ export const updateProduct = createAsyncThunk<
 >(`${sliceName}/updateProduct`, (product, { rejectWithValue }) => {
   try {
     const allItems: string | null = updateItem("products", product);
+    debugger;
     const parsedItems = allItems ? parseAllItems(allItems) : [];
+    debugger;
     const index: number = parsedItems.findIndex((x) => x.id === product.id);
     return parsedItems[index];
   } catch (error) {
@@ -47,8 +50,24 @@ export const addProduct = createAsyncThunk<
 >(`${sliceName}/addProduct`, (newProduct, { rejectWithValue }) => {
   try {
     const allItems: string | null = addItem("products", newProduct);
-    const parsedArr: Product[] = allItems ? parseAllItems(allItems) : [];
-    return parsedArr[parsedArr.length - 1];
+    const parsedArr1: Product[] = allItems ? parseAllItems(allItems) : [];
+    const addedProduct: Product = parsedArr1[parsedArr1.length - 1];
+
+    const {id, quantity, price} = addedProduct;
+
+    const allQuantityHItems: string | null = addHistoryItem("quantityHItems", id, quantity);
+    const parsedArr2: QH[] = allQuantityHItems ? parseHistoryItems(allQuantityHItems) : [];
+    const addedQHItem: QH = parsedArr2[parsedArr2.length - 1];
+
+    const allPriceHItems: string | null = addHistoryItem("priceHItems", id, price);
+    const parsedArr3: PH[] = allPriceHItems ? parseHistoryItems(allPriceHItems) : [];
+    const addedPHItem: QH = parsedArr3[parsedArr3.length - 1];
+
+    console.log(addedProduct);
+    console.log(addedQHItem);
+    console.log(addedPHItem);
+
+    return addedProduct;
   } catch (error) {
     const { message }: { message: string } = error;
     return rejectWithValue(message);
@@ -79,24 +98,28 @@ export const productSlice = createSlice({
     builder.addCase(addProduct.pending, pendingStateUpdate);
     builder.addCase(addProduct.fulfilled, (state, { payload }) => {
       state.isFetching = false;
-      const index = state.data.findIndex((item) => item.id === payload.id);
+      const index = state.data.productItems.findIndex(
+        (item) => item.id === payload.id
+      );
       if (index < 0) {
-        state.data.push(payload);
+        state.data.productItems.push(payload);
       }
     });
     builder.addCase(addProduct.rejected, rejectStateUpdate);
     builder.addCase(getProducts.pending, pendingStateUpdate);
     builder.addCase(getProducts.fulfilled, (state, { payload }) => {
       state.isFetching = false;
-      state.data = payload;
+      state.data.productItems = payload;
     });
     builder.addCase(getProducts.rejected, rejectStateUpdate);
     builder.addCase(updateProduct.pending, pendingStateUpdate);
     builder.addCase(updateProduct.fulfilled, (state, { payload }) => {
       state.isFetching = false;
-      const index = state.data.findIndex((item) => item.id === payload.id);
+      const index = state.data.productItems.findIndex(
+        (item) => item.id === payload.id
+      );
       if (index >= 0) {
-        state.data[index] = payload;
+        state.data.productItems[index] = payload;
       }
     });
     builder.addCase(updateProduct.rejected, rejectStateUpdate);

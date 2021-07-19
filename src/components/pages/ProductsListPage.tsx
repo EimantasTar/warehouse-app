@@ -13,8 +13,8 @@ import { Product } from "../../store/types/productState";
 import { TableComponent } from "../organisms";
 
 const ProductsListPage: FC = (): JSX.Element => {
-  const { data }: { data: Product[] } = useSelector(
-    (state: IInitialState) => state.product
+  const { productItems }: { productItems: Product[] } = useSelector(
+    (state: IInitialState) => state.product.data
   );
   const dispatch: Dispatch<
     AsyncThunkAction<Product[], null, { rejectValue: string }>
@@ -55,7 +55,7 @@ const ProductsListPage: FC = (): JSX.Element => {
           Products list
         </Heading>
       </Flex>
-      {data.length ? <TableComponent data={data} /> : <></>}
+      {productItems.length ? <TableComponent data={productItems} /> : <></>}
     </ScreenLayout>
   );
 };

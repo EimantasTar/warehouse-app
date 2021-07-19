@@ -9,7 +9,7 @@ interface Props {
 const ListItemButton = ({ handleClick }: Props): JSX.Element => {
   return (
     <IconButton
-      size="sm"
+      size="xs"
       variant="outline"
       colorScheme="green"
       aria-label="Save"

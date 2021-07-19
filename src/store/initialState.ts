@@ -7,7 +7,11 @@ export interface IInitialState {
 const initialState: IInitialState = {
   product: {
     isFetching: false,
-    data: [],
+    data: {
+      productItems: [],
+      quantityHItems: [],
+      priceHItems: [],
+    },
     error: null,
   },
 };
